@@ -29,7 +29,7 @@ $(document).ready(function() {
 	function send_data(form_data) {
 					$.ajax({
 			type: "POST",
-			url: "./mail.php",
+			url: "https://formspree.io/freepe@protonmail.com",
 			data: form_data,
 			success: function() {
 				alert("Ваши данные приняты в обработку. Приятного дня!");
@@ -52,7 +52,7 @@ $(window).load(function() {
 				var currentDate = new Date();
 
 				// Set some date in the future. In this case, it's always Jan 1
-				var futureDate  = new Date(2017, 12-1, 3);
+				var futureDate  = new Date(2017, 3, 1);
 
 				// Calculate the difference in seconds between the future and current date
 				var diff = futureDate.getTime() / 1000 - ( currentDate.getTime() ) / 1000 - 3600;
