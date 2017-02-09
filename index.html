@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FreePe project</title>
+
+<script type="text/javascript">
+   var userLang = navigator.language || navigator.userLanguage;
+   hrefUa = 'ua/index.html';
+   hrefRu = 'ru/index.html';
+   hrefEn = 'en/index.html'
+   if (userLang == "ru") {
+       window.location = hrefRu;
+   }
+   else if (userLang == "ua") {
+       window.location = hrefUa;
+   }
+   else window.location = hrefEn;
+</script>
+</head>
+
+<body>
+</body>
+</html>
