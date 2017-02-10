@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	$(".loader").delay(2500).fadeOut(function (){ 
 		setTimeout(function () {
@@ -17,7 +16,7 @@ $(document).ready(function() {
 		heightDetect();
 	});
   
-	$(".form").submit(function(event) {
+/*	$(".form").submit(function(event) {
 			var form_data = $(this).serialize();
 				event.preventDefault();
 				//console.log(form_data);
@@ -25,18 +24,18 @@ $(document).ready(function() {
 					send_data(form_data);
 				}
 		
-  });
-	function send_data(form_data) {
-					$.ajax({
-			type: "POST",
-			url: "https://formspree.io/freepe@protonmail.com",
-			data: form_data,
-			success: function() {
-				alert("Ваши данные приняты в обработку. Приятного дня!");
-			},
-				error: function(){alert('Что-то пошло не так');}
-		});	
-	}
+    });
+    function send_data(form_data) {
+            $.ajax({
+                type: "POST",
+                url: "https://formspree.io/freepe@protonmail.com",
+                data: form_data,
+                success: function() {
+                    alert("Ваши данные приняты в обработку. Приятного дня!");
+                },
+                    error: function(){alert('Что-то пошло не так');}
+            });	
+    } */
 });
 
 $(window).load(function() {
