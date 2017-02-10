@@ -267,7 +267,7 @@ p{
 	  text-shadow: 0px 8px 9.6px rgba(0, 0, 0, 0.35);
       -webkit-animation-delay: 0.5s;
       animation-delay: 0.5s; }	  
-.top_wrapper .top_text form input[type="text"]{
+.top_wrapper .top_text form input[type="email"]{
 	padding: 15px 25px;
 	border:none;
 	border-radius: 3px;
@@ -277,13 +277,13 @@ p{
 	width:35%;
 	
 }
-.top_wrapper .top_text form input[type="text"]::-webkit-input-placeholder {color: rgb(125, 201, 215);}
-.top_wrapper .top_text form input[type="text"]::-moz-placeholder          {color: rgb(125, 201, 215);}/* Firefox 19+ */
-.top_wrapper .top_text form input[type="text"]:-moz-placeholder           {color: rgb(125, 201, 215);}/* Firefox 18- */
-.top_wrapper .top_text form input[type="text"]:-ms-input-placeholder      {color: rgb(125, 201, 215);}
+.top_wrapper .top_text form input[type="email"]::-webkit-input-placeholder {color: rgb(125, 201, 215);}
+.top_wrapper .top_text form input[type="email"]::-moz-placeholder          {color: rgb(125, 201, 215);}/* Firefox 19+ */
+.top_wrapper .top_text form input[type="email"]:-moz-placeholder           {color: rgb(125, 201, 215);}/* Firefox 18- */
+.top_wrapper .top_text form input[type="email"]:-ms-input-placeholder      {color: rgb(125, 201, 215);}
 .top_wrapper .top_text form input[type="submit"]{
     min-width: 178px;
-    width: 23%;
+    width: 30%;
 	padding: 15px 40px;
 	border:none;
 	text-transform:uppercase;
