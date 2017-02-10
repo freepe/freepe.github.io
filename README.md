@@ -1,1 +1,3 @@
-# Website about public organization - FreePe Foundation
+### Ознакомительный вебсайт проекта ФриПе
+### Ознайомчий вебсайт проекту ФріПе
+### Introductory website of FreePe project
