@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../css/fonts.min.css">
 <link rel="stylesheet" href="../css/flipclock.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300,400,500,700" rel="stylesheet">
-<link rel="stylesheet" href="../css/template.min.css">
+<link rel="stylesheet" href="../css/template.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
@@ -60,10 +60,7 @@
                         </ul>
                     </nav>
                 </div>
-
             </div>
-            
-            
         </div>
 		<div class="top_wrapper">
                 <div class="top_descr">
@@ -71,11 +68,10 @@
                         <div class="top_text">
                             <h1 class="animated fadeInDown">ФРІПЕ - ОПТИМАЛЬНИЙ ПУТЬ ДО УСПІХУ</h1>
                             <p class="animated fadeInUp">Місце, де Вам доможуть реалізувати свій потенціал</p>
-                            <!--form class="form">
-                            	<input type="hidden" name="subscriber" value="subscriber" >
-                            	<input type="text" name="email" placeholder="Введіть Ваш E-mail" >
-                                <input type="submit" value="Я з вами!">
-                            </form-->
+                            <form class="form">
+                            	<input type="email" name="_replyto" placeholder="Введіть Ваш E-mail" >
+                                <input type="submit" value="Приєднатися!">
+                            </form>
                             
                         </div>
                     </div>
@@ -322,43 +318,6 @@
         </div>
     </div>
    </div> 
-   
-   <!--div class="universe">
-   		<div class="block-title">
-            <h5>Досліджуйте</h5>
-            <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div></div>
-            <h1>Світ FreePе</h1>
-        </div>
-       <div class="container">
-           <div class="resources">
-               <a href="https://freepe.io" target="_blank">
-                   <i class="entry_endpoint fa fa-3x fa-rocket"></i>
-                   <img src="../images/planet-io.png" class="planet"><br>Ресурси<br /><span class="url">FreePe.io</span>
-               </a>
-           </div>
-           <div class="neural_net">
-               <a href="http://freepe.net" target="_blank">
-                   <i class="entry_endpoint fa fa-3x fa-rocket"></i>
-                   <img src="../images/sun.png" class="planet"><br>Нейромережа<br /><span class="url">FreePe.net</span>
-               </a>
-           </div>
-           <div class="planets_lane">
-               <div class="community">
-                   <a href="http://freepe.co" target="_blank">
-                       <i class="entry_endpoint fa fa-3x fa-rocket"></i>
-                       <img src="../images/planet-co.png" class="planet"><br>Спільнота<br /><span class="url">FreePe.co</span>
-                   </a>
-               </div>
-
-               <div class="knowledges">
-                   <a href="https://freepe.info" target="_blank">
-                       <i class="entry_endpoint fa fa-3x fa-rocket"></i>
-                       <img src="../images/planet-info.png" class="planet"><br>Знання<br /><span class="url">FreePe.info</span>
-                   </a>
-               </div>
-           </div>
-       </div>  
-   </div-->  
    <div class="participation">
    		<div class="block-title">
             <h5>Дійзнайтеся</h5>
@@ -389,24 +348,14 @@
    		<div class="block-title">
             <h5>Зворотній відлік</h5>
             <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div></div>
-            <h1>Запуск децентралізованої мережі через...</h1>     
+            <h1>Запуск промо-кампанії через...</h1>     
         </div>
          <div class="container">
             	<div class="clock">       
             	</div>
-                <!--div class="subscribe">
-                	<p>ПІПДИШІТЬСЯ НА ОНОВЛЕННЯ:</p>
-                	<form class="form">
-                    	<input type="hidden" name="subscriber" value="subscriber" >
-                    	<input type="text" name="email" placeholder="Введіть Ваш E-mail">
-                        <button type="submit">
-                            <span class="icon-check"></span>
-                        </button>
-                    </form>
-                </div-->
          </div>       	
    </div>
-   <!--div class="footer">
+   <div class="footer">
    <div class="feedback">
    		<div class="block-title">
             <h5>Будьмо на зв'язку</h5>
@@ -416,12 +365,12 @@
         <div class="container">
         	<div class="row">
             	<div class="col-xs-12 col-sm-7 col-md-8 feedback-form">
-                	<form class="form">
+                	<form class="form" action="https://formspree.io/freepe@protonmail.com" method="post">
                     	<input type="hidden" name="feedback" value="feedback" >
-                        <input type="text" placeholder="Ваше имя" name="name">
-                        <input type="email" placeholder="Ваш e-mail" name="email">
-                        <textarea placeholder="Сообщение" rows="8" name="message"></textarea>
-                        <input type="submit"  value="Отправить собщение">
+                        <input type="text" placeholder="Ваше ім'я" name="name">
+                        <input type="email" placeholder="Ваш e-mail" name="_replyto">
+                        <textarea placeholder="Повідомлення" rows="8" name="message"></textarea>
+                        <input type="submit"  value="Надіслати повідомлення">
                     </form>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-md-4 feedback-info">
@@ -442,11 +391,9 @@
                         </tr>
                     </table>
                 </div>
-            </div>
-        	
-        </div>
-               	
-   </div--> 
+            </div>	
+	</div>      	
+   </div> 
    <footer class="main_footer">
 	<div class="container">		
 			
