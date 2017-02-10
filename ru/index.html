@@ -68,10 +68,9 @@
                         <div class="top_text">
                                 <h1 class="animated fadeInDown">FREEPE - ОПТИМАЛЬНЫЙ ПУТЬ К ПРОЦВЕТАНИЮ</h1>
                                 <p class="animated fadeInUp">Проект для Свободных Людей в Свободном Мире</p>
-                                <form class="form">
-                                    <input type="hidden" name="subscriber" value="subscriber">
-                                    <input type="text" name="email" placeholder="Введите Ваш E-mail" cfm_check="Y_email">
-                                    <input type="submit" value="Я свободен!">
+                                <form class="form" action="https://formspree.io/bnekras.pm@gmail.com" method="post">
+                                    <input type="email" name="_replyto" placeholder="Введите Ваш E-mail">
+                                    <input type="submit" value="Присоединиться!">
                                 </form>
                             
                         </div>
@@ -375,16 +374,6 @@
          <div class="container">
             	<div class="clock">       
             	</div>
-                <div class="subscribe">
-                	<p>ПОДПИШИТЕСЬ НА ОБНОВЛЕНИЯ:</p>
-                	<form class="form">
-                    	<input type="hidden" name="subscriber" value="subscriber" >
-                        <input type="text" name="email" placeholder="Введите Ваш E-mail" cfm_check="Y_email">
-                        <button type="submit">
-                            <span class="icon-check"></span>
-                        </button>
-                    </form>
-                </div>
          </div>     	
    </div>
    <div class="footer">
@@ -401,10 +390,10 @@
         <div class="container">
         	<div class="row">
             	<div class="col-xs-12 col-sm-7 col-md-8 feedback-form">
-                	<form class="form">
-                        <input cfm_check="Y" type="text" placeholder="Ваше имя" name="name" >
-                        <input cfm_check="Y_email" type="email" placeholder="Ваш e-mail" name="_replyto">
-                        <textarea cfm_check="Y" placeholder="Сообщение" rows="8" name="message"></textarea>
+                	<form class="form" action="https://formspree.io/bnekras.pm@gmail.com" method="post">
+                        <input type="text" placeholder="Ваше имя" name="name" >
+                        <input type="email" placeholder="Ваш e-mail" name="_replyto">
+                        <textarea placeholder="Сообщение" rows="8" name="message"></textarea>
                         <input type="submit" value="Отправить собщение">
                     </form>
                 </div>
