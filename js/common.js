@@ -67,8 +67,8 @@ $(window).load(function() {
 	$('.stat').on('inview', function(event, isInView) {
   if (isInView) {
 		$('#numberFtl').animateNumber({ number: 25000},2000);
-		$('#numberFby').animateNumber({ number: 250 },2000);
-		$('#numberPpl').animateNumber({ number: 20 },2000);
+		$('#numberFby').animateNumber({ number: 500 },2000);
+		$('#numberPpl').animateNumber({ number: 80 },2000);
 		$('#numberVar').animateNumber({ number: 5 },2000);
 		$('.stat').off('inview');
 	  } else {
