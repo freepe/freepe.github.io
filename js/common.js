@@ -1,81 +1,58 @@
 $(document).ready(function() {
-	$(".loader").delay(2500).fadeOut(function (){ 
+    //Add loader & animate text
+	$(".loader").delay(3000).fadeOut(function (){ 
 		setTimeout(function () {
-				$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-				$(".top_text p").animated("fadeInUp", "fadeOutDown");
+            $(".top_text h1").animated("fadeInDown", "fadeOutUp");
+            $(".top_text p").animated("fadeInUp", "fadeOutDown");
 		}, 50);
 	});
-  function heightDetect() {
+    //Add parallax
+    function heightDetect() {
 		$(".main_head").css("height", $(window).height());
-		
 	};
-	
 	heightDetect();
-	
 	$(window).resize(function() {
 		heightDetect();
 	});
-  
-/*	$(".form").submit(function(event) {
-			var form_data = $(this).serialize();
-				event.preventDefault();
-				//console.log(form_data);
-				if (cFM_checktrueAttr($(this))) {
-					send_data(form_data);
-				}
-		
-    });
-    function send_data(form_data) {
-            $.ajax({
-                type: "POST",
-                url: "https://formspree.io/freepe@protonmail.com",
-                data: form_data,
-                success: function() {
-                    alert("Ваши данные приняты в обработку. Приятного дня!");
-                },
-                    error: function(){alert('Что-то пошло не так');}
-            });	
-    } */
 });
-
 $(window).load(function() {
+    //Validate inputs
+    $(".form").submit(function(event) {
+        if (!cFM_checktrueAttr($(this))) {
+            event.preventDefault();
+        }
+    });
+    //Extend team
 	$("#teamExtend").click(function(){
-	$(".other_workers").css("display","block").addClass("animated fadeIn");
-	$(this).css("display","none");
+	    $(".other_workers").css("display","block").addClass("animated fadeIn");
+	    $(this).css("display","none");
 	});
+    //Countdown
 	var clock;
-
-			
-
-				// Grab the current date
-				var currentDate = new Date();
-
-				// Set some date in the future. In this case, it's always Jan 1
-				var futureDate  = new Date(2017, 3, 1);
-
-				// Calculate the difference in seconds between the future and current date
-				var diff = futureDate.getTime() / 1000 - ( currentDate.getTime() ) / 1000 - 3600;
-
-                // Instantiate a coutdown FlipClock
-                if($('.clock').length) {
-                    clock = $('.clock').FlipClock(diff, {
-                    clockFace: 'DailyCounter',
-                    countdown: true
-                });
-                }
-			
+    // Grab the current date
+    var currentDate = new Date();
+    // Set some date in the future. In this case, it's always Jan 1
+    var futureDate  = new Date(2017, 3, 1);
+    // Calculate the difference in seconds between the future and current date
+    var diff = futureDate.getTime() / 1000 - ( currentDate.getTime() ) / 1000 - 3600;
+    // Instantiate a coutdown FlipClock
+    if($('.clock').length) {
+        clock = $('.clock').FlipClock(diff, {
+            clockFace: 'DailyCounter',
+            countdown: true
+        });
+    }
+	//Animate numbers		
 	$('.stat').on('inview', function(event, isInView) {
-  if (isInView) {
-		$('#numberFtl').animateNumber({ number: 25000},2000);
-		$('#numberFby').animateNumber({ number: 500 },2000);
-		$('#numberPpl').animateNumber({ number: 80 },2000);
-		$('#numberVar').animateNumber({ number: 5 },2000);
-		$('.stat').off('inview');
-	  } else {
-		
-	  }
+        if (isInView) {
+            $('#numberFtl').animateNumber({ number: 25000},2000);
+            $('#numberFby').animateNumber({ number: 500 },2000);
+            $('#numberPpl').animateNumber({ number: 80 },2000);
+            $('#numberVar').animateNumber({ number: 5 },2000);
+            $('.stat').off('inview');
+	    }
 	});
-	
+	//Animate progressbar
 	$('.information').on('inview', function(event, isInView) {
 	  if (isInView) {
 		  var elems = document.getElementsByClassName("progressbar");
@@ -91,12 +68,12 @@ $(window).load(function() {
 					  width++;
 					  elem.style.width = width + '%';
 					}
-				  }		
+			   }		
 		  }
-		 $('.information').off('inview');
-		  } 
+		  $('.information').off('inview');
+	    } 
 	});
-
+    //Back to top
 	if ($('#back-to-top').length) {
     var scrollTrigger = 300, // px
         backToTop = function () {
@@ -122,49 +99,40 @@ $(window).load(function() {
 //FIELDS CHECKER
 if(typeof cFM_classError === 'undefined')//сюда запишем css-класс, приписывающийся неправильным полям
     var cFM_classError='cFM_wrong';
-     
 function cFM_checktrueAttr(parent)//подготавливает данные к обработке
 //(parent – jq-указатель на форму, или объединяющий блок)
 {
     var error=true;
-     
     //подчищаем за вызванной ранее функцией
     $('.'+cFM_classError).each(function(){//убираем подсветку ошибок
         $(this).removeClass(cFM_classError);
     });
-     
     //ищем поля для проверки
     var inputsToHandle=false;
     if(typeof parent !== 'undefined')
 		inputsToHandle=parent.find('[cFM_check]');
     else 
      inputsToHandle=$('[cFM_check]');//ну, а если родитель не задан – давайте уж все проверим
-	 
     //хватаем найденные элементы и наблюдаем их
     inputsToHandle.each(function(){
         if(error) error=cFM_prepareChecking(this);//проверяем объекты, ищем хотя бы единственную ошибку
         else cFM_prepareChecking(this);
     }); 
     return error;//возвращаем true, если все элементы прошли ошибку, и false, если кто-то завалился
-
 }
- 
 function cFM_prepareChecking(handle)// запускает проверку конкретного элемента и маркерует ошибочные
 {
     var error=true; //возвращаемое значение; смысл - просто показать, что есть ошибка принимает значение: 
     var after = handle;//куда лепить сообщение об ошибке
     var attribute = $(handle).attr('cFM_check');//значение великого атрибута cFM_check
-     
     //а не задали ли какую хитрую функцию для проверки поля?
     if(typeof $(handle).attr('cFM_function') !== 'undefined')
-        var chkFunk=$(handle).attr('cFM_function');
-         
+        var chkFunk=$(handle).attr('cFM_function');     
     //наконец, проверяем поле
     if(typeof chkFunk !== 'undefined')
         error=window[chkFunk]($(handle));
     else
-        error=cFM_checkFullness(handle);
-     
+        error=cFM_checkFullness(handle);   
     //коль ошибка закралась к нам
     if(error!==true)
     {
@@ -181,11 +149,9 @@ function cFM_prepareChecking(handle)// запускает проверку ко�
     }
     return error;
 }
- 
 function cFM_checkFullness(handle)//а это стандартная функция проверки
 {
     var error = true;
-     
     //считываем данные с атрибутов
     var attribute = $(handle).attr('cFM_check');
     //флаг обязательности

@@ -1,19 +1,27 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>ФриПе - Свободный Мир для Свободных Людей</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ФриПе создан с целью предоставить свободу для людей в полном смысле слова - свобода выбора жизненного пути, свобода на своё мнение, свобода работать и жить в своё удовольствие. ">
-<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="../css/animate.min.css">
-<link rel="stylesheet" href="../css/fonts.min.css">
-<link rel="stylesheet" href="../css/flipclock.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300,400,500,700" rel="stylesheet">
-<link rel="stylesheet" href="../css/template.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LazBog">
+    <meta name="description" content="ФриПе создан с целью предоставить свободу для людей в полном смысле слова - свобода выбора жизненного пути, свобода на своё мнение, свобода работать и жить в своё удовольствие. ">
+    <title>ФриПе - Свободный Мир для Свободных Людей</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fonts.min.css">
+    <link rel="stylesheet" href="../css/flipclock.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/template.min.css">
+    <script>
+        function shapeshift_click(a,e){
+            e.preventDefault();
+            var link=a.href;
+            window.open(link,'1418115287605','width=400,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');
+            return false;}
+    </script>
 </head>
 <body>
     <div class="loader"></div>
@@ -21,9 +29,8 @@
         <div class="main_head_wrapper">
             <div class="head_wrapper">
                 <div class="container">
-
                     <div class="logo_container">
-                        <img src="../images/FreePe_Logo.png" alt="logo">
+                        <a href="index.html"><img src="../images/FreePe_Logo.png" alt="FreePe"></a>
                     </div>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -34,21 +41,11 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <nav class="top-menu">
                             <ul class="navbar">    
-                                <li><a href="about.html" title="О проекте">О ФриПе</a></li>                                             
+                                <li><a href="about.html" title="О проекте ФриПе">О ФриПе</a></li>                                             
                                 <li><a href="http://forum.freepe.org" title="Форум">Форум</a></li>
                                 <li><a href="http://blog.freepe.org" title="Блог">Блог</a></li>
                                 <li>
-                                    <a href="#"><img class="lang_img" src="../images/ru.png" alt="Ru"></a>
-                                    <ul>
-                                        <li>
-                                            <a href="../en/index.html"><img class="lang_img" src="../images/en.png" alt="En" width="20"></a>
-                                            <a href="../ua/index.html"><img class="lang_img" src="../images/ua.png" alt="Ua" width="20"></a>
-                                            <a href="#"><img class="lang_img" src="../images/ru.png" alt="Ru" width="20"></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="icon-sun"></span></a> 
+                                    <a href="javascript:void(0)"><span class="icon-sun"></span></a> 
                                     <ul class="sunBlock">
                                         <li>
                                             <a href="https://freepe.info/"><span class="icon-user"></span>Информация</a>
@@ -57,6 +54,16 @@
                                         </li>
                                     </ul>                                   
                                 </li> 
+                                <li>
+                                    <a href="javascript:void(0)"><img class="lang_img" src="../images/ru.png" alt="Ru"></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../en/index.html"><img class="lang_img" src="../images/en.png" alt="En" width="20"></a>
+                                            <a href="../ua/index.html"><img class="lang_img" src="../images/ua.png" alt="Ua" width="20"></a>
+                                            <a href="javascript:void(0)"><img class="lang_img" src="../images/ru.png" alt="Ru" width="20"></a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -66,13 +73,12 @@
                 <div class="top_descr">
                     <div class="top_centered">
                         <div class="top_text">
-                                <h1 class="animated fadeInDown">ФРИПЕ - Свободный Мир для Свободных Людей</h1>
-                                <p class="animated fadeInUp">ОПТИМАЛЬНЫЙ ПУТЬ К ПРОЦВЕТАНИЮ ВСЕГО ЧЕЛОВЕЧЕСТВА</p>
-                                <form class="form" action="https://formspree.io/freepe@protonmail.com" method="post">
-                                    <input type="email" cfm_check="Y_email" name="_replyto" placeholder="Введите Ваш E-mail">
-                                    <input type="submit" value="Присоединиться">
-                                </form>
-                            
+                            <h1 class="animated fadeInDown">ФРИПЕ - Свободный Мир для Свободных Людей</h1>
+                            <p class="animated fadeInUp">СДЕЛАЙТЕ СВОЙ ВКЛАД В ПРОЦВЕТАНИЕ ВСЕГО ЧЕЛОВЕЧЕСТВА</p>
+                            <a target="_blank" href="https://www.liqpay.com/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTg0MjcwMTEwMDIiLCJhbW91bnQiOiI1IiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCS0LfQvdC%2B0YEg0L3QsCDRgNCw0LfQstC40YLQuNC1IiwidHlwZSI6ImRvbmF0ZSIsImxhbmd1YWdlIjoicnUifQ%3D%3D&signature=OtTciSjkMyRk5%2BJtk2QN8B6uCpA%3D">VISA/MC</a>
+                            <a target="_blank" href="https://blockchain.info/address/13Q3WbjEUpj645mwFPZ6w5bWmbj5gQ7TG3">Bitcoin</a>
+                            <a onclick="shapeshift_click(this, event);" href="https://shapeshift.io/shifty.html?destination=13Q3WbjEUpj645mwFPZ6w5bWmbj5gQ7TG3&amp;output=BTC">Altcoins</a>
+                            <p class="donate_info">Все cобранные средства будут направлены на развитие проекта ФриПе.</p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +90,7 @@
             </div>
         </div>
     </header>
-    <div class="about-us">   
+    <div class="about-us" id="about-us">   
 	<div class="text_descr">  
 	    <div class="block-title">                  
 		<h5>Узнайте</h5>
@@ -105,14 +111,38 @@
 	    <img src="../images/FreePe_ru.png" alt="Про ФриПе">	
 	</div>   
    </div>
+    <div class="timer">
+        <div class="block-title">
+            <h5>Обратный отсчет</h5>
+            <div class="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <h1>Начало Промо-кампании через...</h1>     
+        </div>
+        <div class="container">
+            <div class="clock">       
+            </div>
+            <div class="subscribe">
+                <p>ПОДПИШИТЕСЬ НА ОБНОВЛЕНИЯ:</p>
+                <form class="form" action="https://formspree.io/freepe@protonmail.com" method="post">
+                    <input type="email" cfm_check="Y_email" name="_replyto" placeholder="Введите Ваш E-mail">
+                    <button type="submit">
+                        <span class="icon-check"></span>
+                    </button>
+                </form>
+            </div> 
+        </div>     	
+    </div>
    <div class="team">
        	 <div class="block-title">
              <h5>Знакомьтесь</h5>
              <div class="stars">
-                            	<div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+             </div>
              <h1>Наша команда</h1>
          </div>
          <div class="workers">
@@ -125,26 +155,26 @@
                                 </div>
                                 <div class="text_descr">
                                     <h2>Богдан</h2>
-                                    <h3>Глава правления</h3>
+                                    <h3>Идеолог</h3>
                                     <hr>
-                                    <p>Привет, я счастливый отец и муж, а также исследователь и идеолог проекта ФриПе.  
+                                    <p>Привет, я счастливый отец и муж, а также исследователь и основатель проекта ФриПе.  
                                         Мне бы хотелось помочь людям реализовать свой потенциал и упростить взаимодействие.</p>
                                     <div class="socials">
                                         <a href="https://fb.com/lazbog"><span class="icon-facebook"></span></a>
                                         <a href="https://vk.com/lazbog"><span class="icon-vk"></span></a>
-					<a href="https://twitter.com/lazbog"><span class="icon-twitter"></span></a>
+					                    <a href="https://twitter.com/lazbog"><span class="icon-twitter"></span></a>
                                     </div>
                                 </div> 
                             </div>
                         </div>
-			<div class="col-xs-12 col-sm-4">
+			            <div class="col-xs-12 col-sm-4">
                             <div class="worker">
                                 <div class="thumbnail">
                                     <img src="../images/Larysa.jpg" alt="" >
                                 </div>
                                 <div class="text_descr">
                                     <h2>Лариса</h2>
-                                    <h3>Заместитель Главы Правления</h3>
+                                    <h3>Активистка</h3>
                                     <hr>
                                     <p>Приветствую! Я Кандидат Биологических наук, доцент кафедры Финансов в ПГАА, 
 					исследователь состояния окружающей среды и углеродного следа от человеческой деятельности.</p>
@@ -160,15 +190,15 @@
                                     <img src="../images/Olga.jpg" alt="" >
                                 </div>
                                 <div class="text_descr">
-				    <h2>Ольга</h2>
-                                    <h3>Член Правления</h3>
+				                    <h2>Ольга</h2>
+                                    <h3>Активистка</h3>
                                     <hr>
-                                    <p>Здравствуйте, я счастливая мать и жена. 
+                                    <p>Здравствуйте, я заботливая мать и жена. 
                                         Мне бы хотелось создать сообщество честных, надёжных и весёлых людей, 
 					где все живут в гармонии друг с другом и с окружающей средой.</p>
                                     <div class="socials">
                                         <a href="https://fb.com/olga.dorosheva.3"><span class="icon-facebook"></span></a>   
-					<a href="https://vk.com/id12731848"><span class="icon-vk"></span></a>
+					                    <a href="https://vk.com/id12731848"><span class="icon-vk"></span></a>
                                     </div>
                                 </div> 
                             </div>
@@ -184,19 +214,19 @@
    		<div class="block-title">
              <h5>Посмотрите</h5>
              <div class="stars">
-                            	<div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
-             <h1>Кому FreePe пригодится</h1>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+             <h1>ФриПе пригодится всем</h1>
          </div>
          <div class=" container users">
              <div class="row">
              	<div class="col-xs-12 col-sm-4">
                 	<div class="user ">
                         <img src="../images/factory.png" >
-                        <h4>ОРГАНИЗАЦИЯМ</h4>
-                        <p>Создание, управление и автоматизация процессов, включая финансовые операции, оптимизация ресурсов.</p>
+                        <h4>ПРЕДПРИЯТИЯМ</h4>
+                        <p>Оптимизация и автоматизация процессов, включая финансовые операции, и управление производством.</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -209,22 +239,21 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="user">
                         <img src="../images/presentation.png" >
-                        <h4>АКТИВИСТАМ</h4>
-                        <p>Вкладывать материальные, трудовые или информационные ресурсы  для получения справедливой доли.</p>
+                        <h4>ИНВЕСТОРАМ</h4>
+                        <p>Вкладывать материальные, трудовые или финансовые ресурсы для получения справедливой доли.</p>
                     </div>
                 </div>                
-             </div>
-         	
+             </div>	
          </div>
    </div>
    <div class="testimonials">
    		<div class="block-title">
              <h5>Почитайте</h5>
              <div class="stars">
-                            	<div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
              <h1>Личное мнение</h1>
          </div>
          <div class="container">
@@ -234,7 +263,7 @@
                 ФриПе предлагает построить Свободный Мир для Свободных Людей, 
                 где у каждого есть полная свобода выбора жизненного пути и созданы
                 оптимальные условия для реализации уникального потенциала любого человека.
-                 </p>
+            </p>
             <p class="author">Богдан</p>
             <div class="socials">
 		<a href="https://fb.com/lazbog"><span class="icon-facebook"></span></a>
@@ -269,53 +298,52 @@
                         <div class="star"></div>
                         <div class="star"></div>
                     </div>
-                    <h1>FreePenny</h1>
+                    <h1>Предложение FreePenny</h1>
                 </div>
-                <p>Криптоактив FreePenny разработан для всех видов экономических взаимодействий в FreePe. Стоимость 1 FPN всегда равна 
-                    средней минимальной оплате часа работы. FreePenny генерируется на основании выполнения полезной работы или предоставления ресурсов. 
-                    Таким образом, FreePenny всегда можно использовать, выбирая приоритеты разработки или для оплаты услуг, товаров. 
-                    Качество жизни в FreePe стабильно улучшается, благодаря устойчивому развитию и гармоничному увеличению возможностей.</p> 
+                <p>Криптоактив FreePenny разрабатывается для всех видов экономических взаимодействий в ФриПе. Стоимость 1 FPN всегда равна 
+                    средней минимальной стоимости 1 часа работы участника. FreePenny генерируется на основании выполнения полезной работы или предоставления ресурсов. 
+                    Таким образом, каждый FPN подтверждён реальной стоимостью и его всегда можно использовать для оплаты товаров и услуг или в накопительных целях.
+                    Качество жизни в ФриПе стабильно улучшается, благодаря увеличению возможностей, что способствует повышению стоимости FreePenny.</p> 
                 <ul>
                     <li>Расширение спектра деятельности и предоставляемых услуг.</li>
-                    <li>Производство еды, жилья, транспорта и качественных товаров.</li>
-                    <li>Добавление полезных знаний, технологий, практических решений.</li>
+                    <li>Производство еды, одежды, электроники и полезных товаров.</li>
+                    <li>Синтез новых знаний, технологий, практических решений.</li>
                 </ul>
             </div>
             <div class="income col-xs-12 col-sm-6">
                 <div class="block-title">
                      <h5>Сопоставьте</h5>
                      <div class="stars">
-                            	<div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
-                     <h1>Годовой доход</h1>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                     <h1>План расходов</h1>
                 </div>
                 <div class="source">
-                	<p>Банковские депозиты<span class="percents">7%</span></p>
+                	<p>Продвижение и маркетинг<span class="percents">30%</span></p>
                     <div class="progress-container">
-                      <div class="progressbar" data-width="7"></div>
+                      <div class="progressbar" data-width="30"></div>
                     </div>
                 </div>
                 <div class="source">
-                	<p>Недвижимость<span class="percents">9%</span></p>
+                	<p>Резервный фонд<span class="percents">10%</span></p>
                     <div class="progress-container">
-                      <div class="progressbar" data-width="9"></div>
+                      <div class="progressbar" data-width="10"></div>
                     </div>
                 </div>
                 <div class="source">
-                	<p>Ценные бумаги<span class="percents">14%</span></p>
+                	<p>Административные расходы<span class="percents">10%</span></p>
                     <div class="progress-container">
-                      <div class="progressbar" data-width="14"></div>
+                      <div class="progressbar" data-width="10"></div>
                     </div>
                 </div>
                 <div class="source">
-                	<p>FreePenny<span class="percents">100%</span></p>
+                	<p>Разработка и развитие<span class="percents">50%</span></p>
                     <div class="progress-container">
-                      <div class="progressbar" data-width="100"></div>
+                      <div class="progressbar" data-width="50"></div>
                     </div>
                 </div>
-                
             </div>
        </div>     
     </div>
@@ -331,124 +359,106 @@
    		<div class="block-title">
             <h5>Разузнайте</h5>
             <div class="stars">
-                            	<div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
-            <h1>Как принять участие в FreePe</h1>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <h1>Как принять участие в проекте</h1>
         </div>
         <div class="container">
             <div class="ways">
             	<div class="way">
-                    <a href="https://freepe.info/ru/generatsiya.html" class="coop-link" target="_blank">  
+                    <a href="https://goo.gl/ceQUu9" class="coop-link" target="_blank" rel="nofollow">  
                 	    <img src="../images/invest.png">
-                        <h2>Инвестируй</h2>
-                        <p>Вкладывай сбережения в FreePenny и получай стабильную, обоснованную прибыль</p>
+                        <h2>Приумножай</h2>
+                        <p>Вкладывай сбережения в FreePenny и получай стабильный, обоснованный доход</p>
                     </a>
                 </div>
                 <div class="way">
-                    <a href="https://freepe.info/ru/generatsiya.html" class="coop-link" target="_blank">            
+                    <a href="https://goo.gl/ceQUu9" class="coop-link" target="_blank" rel="nofollow">            
                 	    <img src="../images/develop.png">
-                        <h2>Разрабатывай </h2>
+                        <h2>Создавай</h2>
                         <p>Выполняй задания - пиши код, переводи тексты, рисуй дизайн - генерируй FPN</p>
                     </a>
                 </div>
                 <div class="way">
-                    <a href="https://freepe.info/ru/generatsiya.html" class="coop-link" target="_blank">  
+                    <a href="https://goo.gl/ceQUu9" class="coop-link" target="_blank" rel="nofollow">   
                 	    <img src="../images/distribute.png">
                         <h2>Распространяй</h2>
-                        <p>Расскажи всем друзьям и знакомым о ФриПе, получай до 32.5% реферальных бонусов</p>
+                        <p>Рассказывай всем друзьям и знакомым о ФриПе, получай до 30% реферальных бонусов</p>
                     </a>
                 </div>
             </div>
         </div>        	
    </div>  
-   <div class="timer">
-   		<div class="block-title">
-            <h5>Обратный отсчет</h5>
-            <div class="stars">
-                            	<div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
-            <h1>Начало Промо-кампании через...</h1>     
-        </div>
-         <div class="container">
-            	<div class="clock">       
-            	</div>
-         </div>     	
-   </div>
    <div class="footer">
-   <div class="feedback">
-   		<div class="block-title">
-            <h5>Будем на связи</h5>
-            <div class="stars">
-                            	<div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
-            <h1>Свяжитесь с нами</h1>
-        </div>
-        <div class="container">
-        	<div class="row">
-            	<div class="col-xs-12 col-sm-7 col-md-8 feedback-form">
-                	<form class="form" action="https://formspree.io/freepe@protonmail.com" method="post">
-                        <input type="text" placeholder="Ваше имя" name="name" >
-                        <input type="email" placeholder="Ваш e-mail" name="_replyto">
-                        <textarea placeholder="Сообщение" rows="8" name="message"></textarea>
-                        <input type="submit" value="Отправить собщение">
-                    </form>
+        <div class="feedback">
+            <div class="block-title">
+                <h5>Будем на связи</h5>
+                <div class="stars">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
                 </div>
-                <div class="col-xs-12 col-sm-5 col-md-4 feedback-info">
-                	<table>
-                    	<tr>
-                        	<td><span class="icon-location"></span></td>
-                            <td>пер. Ломаный, 36, Полтава, Украина 36022</td>
-                        </tr>
-                        <tr>
-                        	<td><span class="icon-mail"></span></td>
-                            <td><a href="mailto:freepe@protonmail.com">freepe@protonmail.com</a></td>
-                        </tr>
-                        <tr>
-                        	<td><span class="icon-phone"></span></td>
-                            <td><a href="tel:+380937658569">+38 093 765 85 69</a> <br>
-				<a href="tel:+380662907568">+38 066 290 75 68</a>
-                            </td>
-                        </tr>
-                    </table>
+                <h1>Свяжитесь с нами</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-7 col-md-8 feedback-form">
+                        <form class="form" action="https://formspree.io/freepe@protonmail.com" method="post">
+                            <input cfm_check="Y" type="text" placeholder="Ваше имя" name="name" >
+                            <input cfm_check="Y_email" type="email" placeholder="Ваш e-mail" name="_replyto">
+                            <textarea cfm_check="Y" placeholder="Сообщение" rows="8" name="message"></textarea>
+                            <input type="submit" value="Отправить собщение">
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-4 feedback-info">
+                        <table>
+                            <tr>
+                                <td><span class="icon-location"></span></td>
+                                <td>пер. Ломаный, 36, Полтава, Украина</td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon-mail"></span></td>
+                                <td><a href="mailto:freepe@protonmail.com">freepe@protonmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon-phone"></span></td>
+                                <td><a href="tel:+380937658569">+38 093 765 85 69</a> <br>
+                                    <a href="tel:+380662907568">+38 066 290 75 68</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>  	
+        </div> 
+        <footer class="main_footer">
+            <div class="container">		
+                <div class="copyright">
+                    <p>ФриПе Фундация - это некоммерческая общественная организация, созданная для улучшения социального, экономического и экологического климата в мире.</p>
+                    <p>2016-2017 © ФриПе Фундация. <a href="../LICENSE">Все права защищены.</a></p>
+                </div>
+                <div class="socials">
+                    <p>Следите за новостями</p>
+                    <a href="https://vk.com/freepe_org"><span class="icon-vk"></span></a>
+                    <a href="https://www.facebook.com/freepe.org/"><span class="icon-facebook"></span></a>
+                    <a href="http://twitter.com/freepe_org"><span class="icon-twitter"></span></a>
+                    <a href="http://instagram.com/freepe_org"><span class="icon-instagram"></span></a>
+                    <a href="https://google.com/+FreePeOrg/"><span class="icon-google-plus"></span></a>
                 </div>
             </div>
-        	
-        </div>
-               	
-   </div> 
-   <footer class="main_footer">
-       <div class="container">		
-	    <div class="copyright">
-                <p>ФриПе Фундация - это общественная организация, созданная для улучшения социального, экономического и экологического климата в мире.</p>
-                <p>2016-2017 © ФриПе Фундация. <a href="../LICENSE">Все права защищены.</a></p>
-            </div>
-	    <div class="socials">
-                <p>Следите за новостями</p>
-                <a href="https://vk.com/freepe_org"><span class="icon-vk"></span></a>
-                <a href="https://www.facebook.com/freepe.org/"><span class="icon-facebook"></span></a>
-                <a href="http://twitter.com/freepe_org"><span class="icon-twitter"></span></a>
-                <a href="http://instagram.com/freepe_org"><span class="icon-instagram"></span></a>
-                <a href="https://google.com/+FreePeOrg/"><span class="icon-google-plus"></span></a>
-            </div>
-	</div>
-    </footer>
+        </footer>
     </div>
     <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  --> 
-<script src="../js/jquery-2.1.3.min.js"></script>   
-<script src="../js/parallax.min.js"></script>
-<script async src="../js/jquery.animateNumber.min.js"></script>    
-<script async src="../js/jquery.inview.min.js"></script>
-<script async src="../js/bootstrap.min.js"></script>
-<script async src="../js/waypoints.min.js"></script>
-<script async src="../js/animate-css.min.js"></script>
-<script async src="../js/flipclock.min.js"></script>
-<script async src="../js/common.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script async src="../js/jquery.animateNumber.min.js"></script>    
+    <script async src="../js/jquery.inview.min.js"></script>
+    <script async src="../js/waypoints.min.js"></script>
+    <script async src="../js/animate-css.min.js"></script>
+    <script async src="../js/flipclock.min.js"></script>
+    <script async src="../js/common.min.js"></script>
 </body>
 </html>
