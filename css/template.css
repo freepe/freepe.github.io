@@ -801,6 +801,7 @@ p{
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.004);  
   right:-115px;
+  display: none;
 }
 .flip-clock-divider.minutes .flip-clock-label{
 	right: -135px;
@@ -812,7 +813,7 @@ p{
 	display: flex;
 	justify-content:center;
 	flex-wrap:wrap;
-	margin-top: 80px;
+	margin: 60px 0 20px;
 }
 .timer .container .subscribe{
 	margin-top:20px;
