@@ -430,6 +430,7 @@
             type: frm.attr('method'),
             url: frm.attr('action'),
             data: frm.serialize(),
+	    dataType: 'jsonp',
             success: function (data) {
                 console.log('Submission was successful.');
                 console.log(data);
