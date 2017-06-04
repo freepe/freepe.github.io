@@ -117,7 +117,7 @@
             <div class="subscribe">
                 <p>Subscribe for updates:</p>
                 <form id="subscribeForm" class="form" action="https://freepe.us15.list-manage.com/subscribe/post-json?u=cbfa9501efff463eddae5ea84&id=5a1540710e" method="GET">
-                    <input type="email" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email" cfm_check="Y_email">
+                    <input type="EMAIL" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email" cfm_check="Y_email">
                     <button type="submit">
                       <span class="icon-check"></span>
                     </button>
@@ -431,6 +431,7 @@
 	    cache: false,
             dataType: 'jsonp',
 	    jsonp: 'c',
+	    contentType: 'application/json; charset=utf-8',
             success: function (data) {
                 console.log('Submission was successful.');
                 console.log(data);
