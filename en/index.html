@@ -428,6 +428,9 @@
             type: frm.attr('method'),
             url: frm.attr('action'),
             data: frm.serialize(),
+	    cache: false,
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
             success: function (data) {
                 console.log('Submission was successful.');
                 console.log(data);
